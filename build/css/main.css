@@ -3920,8 +3920,10 @@ ul {
   padding: 0;
   margin: 0; }
 
-a:hover {
-  color: #054360; }
+a {
+  color: #787878; }
+  a:hover {
+    color: #A7D0B1; }
 
 .wizard-nav {
   margin-bottom: 7.8125rem;
@@ -4169,8 +4171,8 @@ select {
       padding-right: 3.125rem; } }
   @media (max-width: 35.9375rem) {
     .header {
-      padding-left: 1.875rem;
-      padding-right: 1.875rem; } }
+      padding-left: 2.5rem;
+      padding-right: 2.5rem; } }
 
 .header__text {
   font-size: 4rem;
@@ -4198,8 +4200,11 @@ select {
 
 .logo img {
   display: block;
-  width: 10.4375rem;
-  height: 14.875rem; }
+  width: 10.4375rem; }
+
+@media (max-width: 35.9375rem) {
+  .logo {
+    width: 12.5rem; } }
 
 .wizard-form-wrap {
   position: relative;
@@ -4613,7 +4618,71 @@ select {
 
 @media (max-width: 35.9375rem) {
   .main-content {
-    padding-left: 1.875rem;
-    padding-right: 1.875rem; } }
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; } }
+
+.accept {
+  margin-bottom: 3.75rem; }
+  @media (max-width: 35.9375rem) {
+    .accept label {
+      font-size: 3.125rem; } }
+
+.radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 0.625rem 0 0 0.4375rem; }
+
+.radio:checked + label::after {
+  opacity: 1; }
+
+.radio + label::after {
+  content: '';
+  position: absolute;
+  top: 0.625rem;
+  left: 0.3125rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background: #A7D0B1;
+  opacity: 0;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  -moz-transition: .2s;
+  transition: .2s; }
+  @media (max-width: 35.9375rem) {
+    .radio + label::after {
+      width: 2.25rem;
+      height: 2.25rem;
+      top: 0.8125rem;
+      left: 0.5rem; } }
+
+.radio + label::before {
+  content: '';
+  position: absolute;
+  top: 0.3125rem;
+  left: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 0.0625rem solid #CDD1DA;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background: #FFF; }
+  @media (max-width: 35.9375rem) {
+    .radio + label::before {
+      width: 3.125rem;
+      height: 3.125rem;
+      top: 0.4375rem; } }
+
+.radio + label {
+  position: relative;
+  padding: 0 0 0 3.125rem;
+  cursor: pointer; }
+  @media (max-width: 35.9375rem) {
+    .radio + label {
+      padding-left: 5rem; } }
 
 /*# sourceMappingURL=main.css.map */
